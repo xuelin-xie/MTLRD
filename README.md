@@ -13,7 +13,7 @@ Hyperspectral images (HSIs) exhibit strong low-rank structures due to high spect
 These are the function files for the MTLRD model, all involved code is compressed in the 'MTLRD_main.zip' file. The framework of this work is:
 ![image](https://github.com/xuelin-xie/MTLRD/blob/main/images/MTLRD_framework.png)
 
-# Key Finding 1
+# Key Findings
 ## 🔑 Key Finding 1: Multi-Level Spatial Low-Rankness in Non-Local Denoising
 ![image](https://github.com/xuelin-xie/MTLRD/blob/main/images/Multi-level_low-rank.png)
 
@@ -29,7 +29,7 @@ To exploit these multi-level spatial low-rank structures while preserving spectr
 ## 🔑 Key Finding 3: Key Finding 3: Joint Optimization Across All Levels
 Prior methods apply low-rank constraints to non-local groups independently, without coupling them with the reduced image. MTLRD jointly optimizes all levels through a BCU-ADMM framework.
 
-# Key advantages
+# Advantages
 1) High precision;
 2) Relatively insensitive to parameters;
 3) Adaptive rank selection via energy threshold.
