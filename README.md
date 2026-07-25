@@ -1,6 +1,7 @@
 # MTLRD
 Source code for “Multi-Level Tensor Low-Rank Decomposition for Hyperspectral Image Denoising”
-⚠️ <span style="color: blue;">**The code will be fully uploaded upon formal acceptance.**</span>.
+
+⚠️ <span style="color: blue;">**The code will be fully uploaded upon formal acceptance.**</span>
 
 # Introduction
 Hyperspectral images (HSIs) exhibit strong low-rank structures due to high spectral correlations. Existing non-local low-rank denoising methods effectively exploit global spectral low-rankness and non-local self-similarity. However, within this paradigm, the spatial low-rank structure of the spectrally reduced image has not been explicitly explored.
