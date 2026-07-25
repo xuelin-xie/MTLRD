@@ -12,6 +12,7 @@ Hyperspectral images (HSIs) exhibit strong low-rank structures due to high spect
 # Contents
 These are the function files for the MTLRD model, all involved code is compressed in the 'MTLRD_main.zip' file. The framework of this work is:
 ![image](https://github.com/xuelin-xie/MTLRD/blob/main/images/MTLRD_framework.png)
+The Urban dataset, employed in the real-noise experiments, is available for download at: https://github.com/xuelin-xie/FRHD/blob/main/Urban.mat
 
 # Key Findings
 ## 🔑 Key Finding 1: Multi-Level Spatial Low-Rankness in Non-Local Denoising
