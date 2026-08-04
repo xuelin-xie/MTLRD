@@ -31,11 +31,12 @@ To exploit these multi-level spatial low-rank structures while preserving spectr
 Prior methods apply low-rank constraints to non-local groups independently, without coupling them with the reduced image. MTLRD jointly optimizes all levels through a BCU-ADMM framework.
 
 ## Theoretical Results
-**Theorem 1.** The spatial-slice truncated t-SVD operator $\mathcal{T}_r(\cdot)$ satisfies  
-$$\|\mathcal{T}_r(\mathcal{X})\|_F \le \|\mathcal{X}\|_F.$$
+**Theorem 1.** The spatial-slice truncated t-SVD operator $\mathcal{T}_r(\cdot)$ satisfies $$\|\mathcal{T}_r(\mathcal{X})\|_F \le \|\mathcal{X}\|_F.$$
 
 **Theorem 2.** The truncation error of the spatial slice truncated t-SVD admits the exact expression:
-$$\|\mathcal{X} - \mathcal{X}_r\|_F^2 = \frac{1}{B} \sum_{k=1}^{B} \sum_{i=r+1}^{\min(M,N)} \left( \widehat{\mathbf{S}}^{(k)}_{ii} \right)^2,$$
+
+$$\lVert \mathcal{X} - \mathcal{X}_r \rVert_F^2 = \frac{1}{B} \sum_{k=1}^{B} \sum_{i=r+1}^{\min(M,N)} \left( \widehat{\mathbf{S}}^{(k)}_{ii} \right)^2,$$
+
 where $\mathcal{X}_r := \mathcal{T}_r(\mathcal{X})$ denotes the rank-$r$ SST t-SVD approximation.
 
 # Advantages
