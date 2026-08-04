@@ -1,7 +1,7 @@
 # MTLRD
-Source code for “Multi-Level Tensor Low-Rank Decomposition for Hyperspectral Image Denoising”
-
 ⚠️ <span style="color: blue;">**The code will be fully uploaded upon formal acceptance.**</span>
+
+Source code for “Multi-Level Tensor Low-Rank Decomposition for Hyperspectral Image Denoising”
 
 # Introduction
 Hyperspectral images (HSIs) exhibit strong low-rank structures due to high spectral correlations. Existing non-local low-rank denoising methods effectively exploit global spectral low-rankness and non-local self-similarity. However, within this paradigm, the spatial low-rank structure of the spectrally reduced image has not been explicitly explored.
@@ -29,6 +29,20 @@ To exploit these multi-level spatial low-rank structures while preserving spectr
 
 ## 🔑 Key Finding 3: Key Finding 3: Joint Optimization Across All Levels
 Prior methods apply low-rank constraints to non-local groups independently, without coupling them with the reduced image. MTLRD jointly optimizes all levels through a BCU-ADMM framework.
+
+## Theoretical Results
+**Theorem 1.** The spatial-slice truncated t-SVD operator $\mathcal{T}_r(\cdot)$ satisfies  
+$$
+\|\mathcal{T}_r(\mathcal{X})\|_F \le \|\mathcal{X}\|_F.
+$$
+
+**Theorem 2.** The truncation error of the spatial slice truncated t-SVD admits the exact expression:
+$$
+\|\mathcal{X} - \mathcal{X}_r\|_F^2
+= \frac{1}{B} \sum_{k=1}^{B} \sum_{i=r+1}^{\min(M,N)}
+\left( \widehat{\mathbf{S}}^{(k)}_{ii} \right)^2,
+$$
+where $\mathcal{X}_r := \mathcal{T}_r(\mathcal{X})$ denotes the rank-$r$ SST t-SVD approximation.
 
 # Advantages
 1) High precision;
