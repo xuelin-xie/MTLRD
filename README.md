@@ -52,7 +52,7 @@ where $\mathcal{X}_r := \mathcal{T}_r(\mathcal{X})$ denotes the rank-$r$ SST t-S
 If you find this code or our work helpful, we would really appreciate a citation to our paper. Thank you!
 
 Paper citation:
-Xuelin Xie, Xiliang Lu, Zhengshan Wang, and Long Chen. Multi-Level Tensor Low-Rank Decomposition for Hyperspectral Image Denoising. In preparation.
+Xuelin Xie, Xiliang Lu, Zhengshan Wang, and Long Chen. Multi-Level Tensor Low-Rank Decomposition for Hyperspectral Image Denoising. Revised manuscript submitted to "Mathematics and Computers in Simulation" (MATCOM).
 
 # Contact
 The MTLRD model for MATLAB is supported by Supercomputing Center of Wuhan University. If you have any questions, please feel free to contact us: xl.xie@whu.edu.cn (Xuelin Xie).
